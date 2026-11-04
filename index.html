@@ -246,7 +246,7 @@
           <div class="study-note">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 11v6M12 7h.01"/></svg>
             <div><b>Please note: these events are fictional.</b><br>
-            The events, dates and ticket shop on this page were created for a research study. No real tickets are sold and no real payment will be made. Please choose as if you were really buying a ticket.</div>
+            The events, dates and ticket shop on this page were created for a research study. No real tickets are sold and no real payment will be made. However, please make your choices as if you were really buying a ticket.</div>
           </div>
           <div class="events" id="events"></div>
           <div class="ticket-box" id="ticketBox">
@@ -293,12 +293,12 @@
           <div class="study-note" id="studyNote">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 11v6M12 7h.01"/></svg>
             <div><b>This is a simulated checkout for a research study.</b><br>
-            Please do <u>not</u> enter your real name or email address. These fields are optional: leave them empty or make something up. Nothing you type here is saved, and no real payment will be made.</div>
+            These fields are optional: you can leave them empty or make something up. Nothing you type here is saved, and no real payment will be made.</div>
           </div>
           <div class="grid2">
-            <div class="field"><label>First name <span class="opt-l">(optional)</span></label><input id="first" autocomplete="off" placeholder="e.g. Sam"></div>
-            <div class="field"><label>Last name <span class="opt-l">(optional)</span></label><input id="last" autocomplete="off" placeholder="e.g. Jansen"></div>
-            <div class="field full"><label>Email address <span class="opt-l">(optional)</span></label><input id="email" type="email" autocomplete="off" placeholder="e.g. sam@example.com"></div>
+            <div class="field"><label>First name <span class="opt-l">(optional)</span></label><input id="first" autocomplete="off"></div>
+            <div class="field"><label>Last name <span class="opt-l">(optional)</span></label><input id="last" autocomplete="off"></div>
+            <div class="field full"><label>Email address <span class="opt-l">(optional)</span></label><input id="email" type="email" autocomplete="off"></div>
           </div>
         </div>
 
@@ -374,7 +374,7 @@
 
 <div class="modal-bg" id="modal"><div class="modal">
   <h3 id="modalTitle">Terms and Conditions</h3>
-  <div id="modalText" class="sub"></div>
+  <div id="modalText" class="sub" style="white-space:pre-line;font-size:14px"></div>
   <button class="btn" type="button" id="modalClose">Close</button>
 </div></div>
 
@@ -493,8 +493,18 @@ function insurancePrice(){
 const priceOf = o => typeof o[3] === "function" ? o[3]() : o[3];
 
 const MODAL_TEXT = {
-  terms:   ["Terms and Conditions", "[Placeholder for the terms and conditions text.]"],
-  privacy: ["Privacy Policy",       "[Placeholder for the privacy policy text.]"],
+  terms: ["Terms and Conditions", `1. This ticket shop is part of a research study. The events are fictional: no real tickets are sold and no real payment is made. The tickets and extras you choose are not charged.
+
+2. Your contribution is real. At the end of the study, 10 bol.com gift cards of €10 each will be raffled among all participants. If you win, the contribution you chose for sustainable aviation fuel will be deducted from your gift card and actually donated. For example: if you contributed €2, you will receive a gift card worth €8.
+
+3. Taking part is voluntary. You can stop at any moment without giving a reason.`],
+  privacy: ["Privacy Policy", `1. We do not collect your name, email address or payment details on this page. Anything you type into the contact fields is not saved.
+
+2. We only record the choices you make and how long each step takes.
+
+3. Your data is anonymous. It is linked to your survey answers with a random code only, and cannot be traced back to you.
+
+4. Your data is used for this research only, stored securely in line with the GDPR (AVG), and never shared with third parties or used for commercial purposes.`],
 };
 
 /* =========================================================
