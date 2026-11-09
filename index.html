@@ -279,7 +279,7 @@
               <!-- PLACEHOLDER: title of the contribution request -->
               <h2 id="contribTitle"><span id="contribTitleText">[Title of the contribution request]</span> <span class="req-star" id="contribStar">*</span></h2>
               <!-- PLACEHOLDER: the question shown above the options -->
-              <p id="contribQuestion">[Question text, e.g. “Would you like to contribute to sustainable fuel for …?”]</p>
+              <p id="contribQuestion">[Question text, e.g. “Would you like to contribute to ... for …?”]</p>
               <!-- PLACEHOLDER: link text for the information pop-up (pop-up text is in MODAL_TEXT.contrib) -->
               <a href="#" class="info-link" data-modal="contrib">[More information about this contribution]</a>
             </div>
@@ -416,7 +416,7 @@ const CONFIG = {
   AUTO_POPUP_ON_OWN_STEP: true,      // separate page: show the information pop-up when the page opens (first visit)
   AUTO_POPUP_DELAY_MS: 500,         // wait this long before the pop-up appears
   OPTIN_AMOUNT: 2,
-  OPTIN_TEXT: "Add €2 to support sustainable aviation fuel",
+  OPTIN_TEXT: "Add €2 to support ...",
   SUGGESTED_TEXT: "Suggested",
   OTHER_MAX: 10,                     // max amount allowed in "Other" (deducted from a €10 gift card)
   // Where the contribution request appears — normally set by VERSION above (override with ?placement=...):
@@ -505,7 +505,7 @@ const MODAL_TEXT = {
   contrib: ["[Title of the information pop-up]", `[Placeholder for the information about the contribution.]`],
   terms: ["Terms and Conditions", `1. This ticket shop is part of a research study. The events are fictional: no real tickets are sold and no real payment is made. The tickets and extras you choose are not charged.
 
-2. Your contribution is real. At the end of the study, 10 bol.com gift cards of €10 each will be raffled among all participants. If you win, the contribution you chose for sustainable aviation fuel will be deducted from your gift card and actually donated. For example: if you contributed €2, you will receive a gift card worth €8.
+2. Your contribution is real. At the end of the study, 10 bol.com gift cards of €10 each will be raffled among all participants. If you win, the contribution you chose will be deducted from your gift card and actually donated. For example: if you contributed €2, you will receive a gift card worth €8.
 
 3. Taking part is voluntary. You can stop at any moment without giving a reason.`],
   privacy: ["Privacy Policy", `1. We do not collect your name, email address or payment details on this page. Anything you type into the contact fields is not saved.
